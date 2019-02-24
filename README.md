@@ -32,7 +32,7 @@ Note that this may take a while.
 ### Camera Demo
 
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HnaE-Inp_ps?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video src="output.avi" poster="poster.jpg" width="320" height="200" controls preload></video>
 
 If you are not interested in training/testing and just want
 to see what the model can do, then the script you are looking
