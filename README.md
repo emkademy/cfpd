@@ -32,7 +32,7 @@ Note that this may take a while.
 ### Camera Demo
 
 ---
-<video src="output.avi" poster="poster.jpg" width="320" height="200" controls preload></video>
+![](output.gif)
 
 If you are not interested in training/testing and just want
 to see what the model can do, then the script you are looking
@@ -94,7 +94,7 @@ in *./config.ini* file can be necessary;
 All pretrained models can be tested using ***./tests.py***
 script:
 
-```python
+```bash
 python tests.py --section-name cfpd
 ```
 ### Docker image
