@@ -32,7 +32,7 @@ Note that this may take a while.
 ### Camera Demo
 
 ---
-![](output.gif =250x250)
+<img src="https://github.com/kivancyuksel/cfpd/blob/master/output.gif" width="250" height="250>
 
 If you are not interested in training/testing and just want
 to see what the model can do, then the script you are looking
