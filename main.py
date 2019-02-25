@@ -30,6 +30,7 @@ def main():
 
     underscore_index = parameters.train_csv.find("_")
     train_base_csv = parameters.train_csv[:underscore_index] if underscore_index != -1 else parameters.train_csv
+    train_base_csv += ".csv"
     trainset_preprocessor = TrainsetPreprocessing(parameters, train_base_csv, parameters.train_dirs)
     # Creates .csv files
     trainset_preprocessor.process_images()

@@ -4,7 +4,7 @@ that is based on a moderate size Convolutional Neural Network.
 Given a face image, the model can detected eyes (together with
 eyebrows), nose and mouth. It can run on top of any face 
 detector. Since the network is not very large, the performance
-is real-time.
+is in real-time.
 
 
 ### Prerequisites
@@ -103,6 +103,20 @@ python tests.py --section-name cfpd
 Probably quickest way to start using this repo:
 
 [Docker image](https://cloud.docker.com/u/kivancyuksel/repository/docker/kivancyuksel/alluneed)
+
+However please keep in mind that if you want to use the docker
+image for camera demo, you will need to make
+your display available in the docker image. 
+
+Also, during training you might get an error if you don't have
+your display available in the docker image. The reason for that
+is because during training the loss graph is drawn using matplotlib.
+If you get any error related to display during training, just
+comment this line out in *trainer_and_tester.py*:
+
+```python
+track_losses(losses, model_save_path)
+```
 
 ### Licence
 

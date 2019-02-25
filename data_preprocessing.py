@@ -14,7 +14,7 @@ class DataPreprocessing:
     def __init__(self, dataset_parameters, base_csv, dataset_dirs):
         self.dataset_parameters = dataset_parameters
         self.dataset_parameters.img_shape = np.asarray(self.dataset_parameters.img_shape)
-        self.dataset_base_dir = "./data/images/"
+        self.base_dataset_dir = dataset_parameters.base_dataset_dir
         self.dataset_dirs = dataset_dirs
         self.base_csv = base_csv
         self.transformation_parameters = namedtuple("Transformation", ["center", "angle", "scale", "offset"])
@@ -33,7 +33,7 @@ class DataPreprocessing:
                 resizing_parameters = self.get_resizing_transformation_parameters(img, landmarks)
                 resized_img, resized_landmarks = self.resize_img_and_landmarks(img, landmarks, resizing_parameters)
 
-                img_save_path = img_path.replace(self.dataset_base_dir,
+                img_save_path = img_path.replace(self.base_dataset_dir,
                                                  self.dataset_parameters.data_preprocessing_output_dir)
                 utils.save_image(resized_img, img_save_path)
 

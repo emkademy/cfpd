@@ -102,6 +102,7 @@ class Parameters:
 
             "img_shape": tuple,
             "color": bool,
+            "base_dataset_dir": str,
             "data_preprocessing_output_dir": str,
 
             "mirror": bool,
