@@ -27,7 +27,16 @@ that I have. To do that:
 conda create --name <ENV_NAME> --file requirements.txt
 conda activate <ENV_NAME>
 ```
-Note that this may take a while.
+Note that this may take a while. If you would like to install
+the dependencies via pip, you can go ahead and:
+
+```bash
+pip install opencv-python
+pip install dlib
+pip install matplotlib
+```
+And for pytorch, please visit their [webpage](https://pytorch.org/get-started/locally/) for installation instructions.
+
 
 ### Camera Demo
 
