@@ -102,7 +102,7 @@ python tests.py --section-name cfpd
 ---
 Probably quickest way to start using this repo:
 
-[Docker image](https://cloud.docker.com/u/kivancyuksel/repository/docker/kivancyuksel/alluneed)
+[Docker image](https://hub.docker.com/r/kivancyuksel/alluneed)
 
 ### Licence
 
